@@ -9,6 +9,13 @@
 // `factorial(2)` to return `2`, and so on.
 //
 // Use only what you learned! No loops yet, so you'll have to use recursion!
+fn factorial(i: i32) -> i32 {
+    if i == 0 {
+        1
+    } else {
+        i * factorial(i-1)
+    }
+}
 
 #[cfg(test)]
 mod tests {
